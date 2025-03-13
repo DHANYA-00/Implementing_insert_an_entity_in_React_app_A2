@@ -6,7 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import './Dashboard.css'; // Optional: Import CSS for styling
 
 const Dashboard = () => {
-  const navigate = useNavigate();
+
+  const nav=useNavigate();
+
+  const handleSubmit=()=>{
+      nav('/add-movie')
+  }
 
   // Sample movie data. In a real application, this might come from an API or global state.
   const [movies, setMovies] = useState([
@@ -41,6 +46,7 @@ const Dashboard = () => {
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
+      <button className='add-movie-button' onClick={handleSubmit}>Add Movie</button>
     </div>
   );
 };

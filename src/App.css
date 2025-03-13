@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+.submit-button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 80%;
+  height: 40px;
+  
+}
+.submit-button:hover{
+  background-color: rgb(114, 221, 137);
+  color: black;
+}
+
+.cancel-button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 80%;
+  height: 40px;
+}
+.cancel-button:hover{
+  background-color: rgb(240, 115, 115);
+  color: black;
+}
+
+.genre{
+  width: 96%;
+  height: 25px;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+
+}
